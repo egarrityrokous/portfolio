@@ -1,0 +1,48 @@
+GRADE SHEET FOR CS134 LAB 2 ("Day of the week")
+
+Requirements of this lab:
+   1. UTCDay(timeval)
+     + Computes correctly (see testing below, and comments if failure)
+     + Code is straightforward and readable
+     + Includes helpful comments
+   2. localDay(timeval, offset)
+     + Computes correctly
+     + Calls UTCDay
+     + Includes helpful comments
+   3. dayOfWeek(day)
+     + Computes correct
+     + Makes appropriate use of conditionals
+   4. Main method
+     + Copied correctly
+     + Computes and prints the current day of the week
+
+Grade:    A
+
+Comments from Graders:
+Good job!  In the dayOfWeek() function, you need to always return
+a value, regardless of what the user enters.  That means you need an "else"
+block in your function, either turning the elif for Saturday into an "else"
+block or creating a separate "else" block where you return some default
+default value, that could be any day of the week that you choose.  Please
+see style comments in day.py.
+
+Testing Results:
+
+
+
+3c3
+< Signed:
+---
+> Signed: Eamon Garrity-Rokous
+6c6
+< (As necessary:) These lab and herd buddies helped me develop my approach:
+---
+> (As necessary:) These lab and herd buddies helped me develop my approach: N/A. I went to my herd meeting but did not need any help completing this lab. All my work on this lab is from my own mind and knowledge, though I did appreciate the constructive and productive company!
+honorcode.txt was edited
+
+Passes typical unit tests.
+All random date tests passed.
+
+When ready, run
+    bash lab2tests >> GradeSheet.txt
+to add the output to end of GradeSheet
