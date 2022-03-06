@@ -1,0 +1,102 @@
+GRADE SHEET FOR CS134 LAB 7 ("Fun with Recursion"):
+
+    Warm-up Task: sumDigits
+          + passes all instructor doctests
+          + has an explicit base case and correctly handles it
+          + correctly handles recursive call
+          + the implementation is fully recursive; no loops are found
+          + int not converted to str
+          + clean and interpretable code with comments
+    Task 1: bedtimeStory
+          + passes all instructor doctests
+          + correct calls to firstSentence and lastSentence
+          + has an explicit base case
+          + the implementation is fully recursive; no loops are found
+          + clean and interpretable code with comments
+          + one additional doctest is provided
+    Task 2: quilt
+          + drawQuilt-500-4.ps found and matches specs
+          + testDrawQuilt(500, 4) actually generates figure
+          + drawQuilt calls drawSquare once
+          + drawQuilt uses only the allowed turtle commands
+          + drawQuilt uses color1, color2 rather than GOLD, PURPLE
+          + the implementation is fully recursive; no loops are found
+          + has an explicit base case
+          + clean and interpretable code with comments
+    Task 3: shrub
+          + shrub-100-15-0.8-10.ps found and matches specs
+          + testShrub(100, 15, 0.8, 10) actually generates figure
+          + testShrub(100, 15, 0.8, 10) prints (232, 3973.9861913600025)
+          + shrub uses only the allowed turtle commands
+          + the implementation is fully recursive; no loops are found
+          + has an explicit base case
+          + clean and interpretable code with comments
+    Extra credit: recursiveSquares
+          + produces correct output (figure and text)
+          + recursiveSqCount uses only the allowed turtle commands
+          + the implementation is fully recursive; no loops are found
+          + has an explicit base case
+          + clean and interpretable code with comments
+
+
+Grade: A+
+
+Comments from Graders:
+Good job throughout.  Nice job on the extra credit!
+
+To improve readability, you want to put horizontal whitespace around commas
+commas consistently.  (Space helps around operators too.)
+
+See other suggestions for improvement in code such as improving readability
+by inserting blank lines between logical blocks of code.
+
+You also want to choose descriptive variable names that indicate which
+case they correspond to.  Please see comments in code.
+
+
+Results of testing:
+
+honorcode.txt was edited
+
+Running sumDigits-tests.py...
+Required sumDigits tests passed.
+Done.
+
+Running sumDigits.py.
+--------------------
+Done.
+
+
+Running bedtime-tests.py...
+Required bedtimeStory tests passed.
+Done.
+
+Running bedtime.py.
+-----------------
+Done.
+
+
+Running quilt-tests.py...
+Quilt output generated and found in quilt-output.ps
+Done.
+
+Running quilt.py.
+-----------------
+Done.
+
+
+Running shrub-tests.py...
+Shrub output generated and found in shrub-output.ps
+ Passed shrub tests.
+Done.
+
+Running shrub.py.
+-----------------
+shrub(100, 15, 0.8, 10) -> (232, 3973.986191360001)
+Done.
+
+
+Running recursiveSquares.py...
+-------------------------------
+recursiveSqCount(512, 32)->(46, 40, 35)
+Done.
