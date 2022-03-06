@@ -1,0 +1,5 @@
+Honor Code: This work reflects my independent effort.
+Signed: Eamon Garrity-Rokous
+
+
+(As necessary:) These lab and herd buddies helped me develop my approach: All of my work is from my own knowledge and implementation. I do appreciate my herd keeping me company, and I did receive a little conceptual push during the lab from TA Sophie on puzzle p1, which I just did for fun at the end of the lab (and for a little extra credit, perhaps, at the graders' discretion).

@@ -1,0 +1,94 @@
+GRADE SHEET FOR CS134 LAB 3 ("Building a Python Toolbox"):
+
+Requirements of this lab:
+   0. The toolbox (wordTools.py)
+      + Module documentation string ("""...""" at top of module)
+      + Fixed doctest for canon
+      # For each function (uniques, isIsogram, sized)):
+         + doc string with at least 2 new tests
+      	 ~ written in a clear and readable manner
+      	 + comments on hard-to-understand code
+      	 + passes instructor unit tests (see below, and comments)
+
+  + Honor code
+
+   1. Guidelines on puzzles that are required:
+      + b1: Required (correct)
+      + p1 or p2: Completed at least one (p1 & p2 correct)
+      # For each of the above (b1, p1 or p2)):
+      	 ~ written in a clear and readable manner
+      	 + comments on hard-to-understand code
+         + made reasonable use of for loops and conditionals
+         + used functions from wordTools when appropriate
+
+   2. Other extras (if attempted):
+      + p1 and p2: Completed both (p1 & p2 correct)
+      - b2 (incorrect answer)
+      * p3
+
+Grade: A-
+
+Comments from Graders:
+* wordTools
+  * uniques
+    + well written
+    + nice job adding a doctest that takes into account special characters
+  * isIsogram
+    - the loop is unnecessary since it's doing the exact same thing as the unique
+      function, so uniqueWord should always end up being the same as lowerWord
+    ~ because you are returning a boolean you can simplify this function to
+      return word.lower() == lowerWord since the == condition will return True/False
+  * sized
+    + well written
+    ~ think about some "corner" case doctests (eg, not finding any words of a
+      given size)
+* puzzles
+  * b1: (required - correct)
+    + well done!
+  * p1: (extra - correct)
+    ~ although you do get the right answer it could be written more efficiently
+    - rather than call readWords('words/bodyPart.txt') twice you can call it once
+      and store the resulting list as a variable that you can then reuse
+    - think about how you might be able to use the sized function you wrote to
+      make your code simpler
+    + good use of cannon
+    + good comments (they allowed me to easily follow your logic)
+  * p2: (required - correct)
+    + well done!
+  * b2: (extra - incorrect answer)
+    - you're going in the right direction but you are not capturing all the words
+    - the setup of your if statement is quite complex and hard to follow; try
+      splitting it into some potentially nested conditional statements; this may
+      help you figure out where your bug is
+* General
+  ~ in general it's a good idea to build the list you're going to iterate over
+    before defining your for loop rather than in the header itself (see p2 & b2)
+  ~ try to keep your comments to the ~80 character limit (some of your inline
+    comments go a little long and could be standalone comments instead)
+
+
+Results from testing:
+
+honorcode.txt was edited
+
+Running wordTools.py.  (No output expected.)
+Done.
+Running lab3stress.py...
+All unit tests passed.
+Done.
+
+Running puzzles.py...
+Expected output:
+b1(): 6973
+p1(): tonsil nostril
+p2(): Orleans Salerno
+b2(): 17
+p3(): Ebola Herod
+
+Student solutions:
+b1(): 6973
+p1(): tonsil nostril
+p2(): Orleans Salerno
+b2(): 7
+p3(): None
+done.
