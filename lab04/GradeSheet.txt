@@ -1,0 +1,168 @@
+GRADE SHEET FOR CS134 LAB 4 ("Voting Rules Matter"):
+
+Requirements of this lab:
+   Part 1: The voting module (in voting.py)
+      + Module documentation string ('''...''' at top of file)
+      + Meaningful docstrings for each function
+      + At least two doctests to test each function
+      + Code does not use unnecessary loops or nested code blocks
+      + Code makes good use of variable names, and is clear and readable
+      + Comments are appropriately used to explain hard-to-follow logic
+      + Each function has a default return type that matches its docstring
+      ~ Passes instructor unit tests (see below, and comments)
+
+   Part 2: Implementing voting rules (in elections.py):
+      + Makes use of helper methods in voting.py as much as possible
+      + Code does not use unnecessary loops or nested code blocks
+      + Code makes good use of variable names, and is clear and readable
+      + Comments are appropriately used to explain hard-to-follow logic
+      + Each function has a default return type that matches its docstring
+      + Functions pass the instructor unit tests (see below, and comments)
+      - Extra credit:  Condorcet winner function correctly implemented
+
+   Overall:
+      + Used at least one list comprehension in voting.py or election.py
+      + Honor code signed
+
+Grade: A-
+
+Comments from Graders:
+* voting.py
+  + nice list comprehensions in readBallots, firstChoice, eliminateCandidate
+  ~ in mostVotes and leastVotes it would be more efficient to save the .count()
+    rather than recalculate it in multiple places (for short lists this might
+    be fast, but as your datasets get large, this computation can be slow)
+* election.py
+  + nice job with plurality and borda
+  * rankedChoice
+    - needs to be able to handle empty lists (see testing output below)
+    - you want to avoid overwriting parameters in your functions, you should
+      instead create a new variable that can update in your while loop
+* General
+  + nice documentation of your code; but please put your comments before the
+    block of code it describes rather than after
+  ~ when writing doctests, try to think about corner/edge cases (eg, [])
+
+Results from testing:
+
+honorcode.txt was edited
+
+Running lab4-voting-stress.py...
+**********************************************************************
+File "/Users/williams/External/cs134TA/lab04/28/lab4-voting-stress.py", line 101, in __main__.majorityTest
+Failed example:
+    majority( [ ] )
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/local/Cellar/python@3.9/3.9.7_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.majorityTest[0]>", line 1, in <module>
+        majority( [ ] )
+      File "/Users/williams/External/cs134TA/lab04/28/voting.py", line 147, in majority
+        majorityVotedFor = mostVotes(firstChoiceList)[0]
+    IndexError: list index out of range
+**********************************************************************
+1 items had failures:
+   1 of   9 in __main__.majorityTest
+***Test Failed*** 1 failures.
+Done.
+
+Running voting.py.  (No output expected.)
+Done.
+
+Running lab4-election-stress.py...
+**********************************************************************
+File "/Users/williams/External/cs134TA/lab04/28/lab4-election-stress.py", line 72, in __main__.condorcetTest
+Failed example:
+    condorcet(readBallot('data/icecream.csv'))
+Expected:
+    'Cookies and Cream'
+Got nothing
+**********************************************************************
+File "/Users/williams/External/cs134TA/lab04/28/lab4-election-stress.py", line 74, in __main__.condorcetTest
+Failed example:
+    condorcet( [ ['a', 'b', 'c'], ['b', 'c', 'a'], ['b', 'a', 'c'], ['b', 'a', 'c'], ['a', 'b', 'c'] ])
+Expected:
+    'b'
+Got nothing
+**********************************************************************
+File "/Users/williams/External/cs134TA/lab04/28/lab4-election-stress.py", line 61, in __main__.rankedChoiceTest
+Failed example:
+    rankedChoice([ ['a', 'b', 'c'], ['b', 'a', 'c'], ['c', 'a', 'b']])
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/local/Cellar/python@3.9/3.9.7_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.rankedChoiceTest[5]>", line 1, in <module>
+        rankedChoice([ ['a', 'b', 'c'], ['b', 'a', 'c'], ['c', 'a', 'b']])
+      File "/Users/williams/External/cs134TA/lab04/28/election.py", line 67, in rankedChoice
+        while not majority(firstChoice(ballots)):
+      File "/Users/williams/External/cs134TA/lab04/28/voting.py", line 147, in majority
+        majorityVotedFor = mostVotes(firstChoiceList)[0]
+    IndexError: list index out of range
+**********************************************************************
+File "/Users/williams/External/cs134TA/lab04/28/lab4-election-stress.py", line 63, in __main__.rankedChoiceTest
+Failed example:
+    rankedChoice ( [ [], [] ] )
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/local/Cellar/python@3.9/3.9.7_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.rankedChoiceTest[6]>", line 1, in <module>
+        rankedChoice ( [ [], [] ] )
+      File "/Users/williams/External/cs134TA/lab04/28/election.py", line 67, in rankedChoice
+        while not majority(firstChoice(ballots)):
+      File "/Users/williams/External/cs134TA/lab04/28/voting.py", line 147, in majority
+        majorityVotedFor = mostVotes(firstChoiceList)[0]
+    IndexError: list index out of range
+**********************************************************************
+File "/Users/williams/External/cs134TA/lab04/28/lab4-election-stress.py", line 65, in __main__.rankedChoiceTest
+Failed example:
+    rankedChoice ( [ [" ", ""], [""," "] ] )
+Exception raised:
+    Traceback (most recent call last):
+      File "/usr/local/Cellar/python@3.9/3.9.7_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.rankedChoiceTest[7]>", line 1, in <module>
+        rankedChoice ( [ [" ", ""], [""," "] ] )
+      File "/Users/williams/External/cs134TA/lab04/28/election.py", line 67, in rankedChoice
+        while not majority(firstChoice(ballots)):
+      File "/Users/williams/External/cs134TA/lab04/28/voting.py", line 147, in majority
+        majorityVotedFor = mostVotes(firstChoiceList)[0]
+    IndexError: list index out of range
+**********************************************************************
+2 items had failures:
+   2 of   2 in __main__.condorcetTest
+   3 of   8 in __main__.rankedChoiceTest
+***Test Failed*** 5 failures.
+NOTE: CONDORCET WAS EXTRA CREDIT!
+Done.
+
+Running election.py.
+-----------------
+Expected output:
+-----------------
+Ice-cream flavor class election results:
+Plurality winner: Cookies and Cream
+Borda winner: Cookies and Cream
+Ranked-choice winner: Cookies and Cream
+
+Updated icecream flavor election results:
+Plurality winner: Purple Cow Mint Chocolate Chip
+Borda winner: Purple Cow
+Ranked-choice winner: Purple Cow
+Condorcet winner: Cookies and Cream
+-----------------
+Student solutions:
+-----------------
+Ice-cream flavor class election results:
+Plurality winner: Cookies and Cream
+Borda winner: Cookies and Cream
+Ranked-choice winner: Cookies and Cream
+
+Updated icecream flavor election results:
+Plurality winner: Purple Cow Mint Chocolate Chip
+Borda winner: Purple Cow
+Ranked-choice winner: Purple Cow
+-----------------
+Done.

@@ -1,0 +1,7 @@
+
+
+Running voting.py.  (No output expected.)
+Done.
+Running part1.py...
+All unit tests passed.
+Done.
