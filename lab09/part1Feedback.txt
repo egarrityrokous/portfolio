@@ -1,0 +1,6 @@
+
+Running lab9part1.py...
+-----BoggleLetter Tests-----
+Done.
+
+***********************************************

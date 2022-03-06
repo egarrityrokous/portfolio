@@ -1,0 +1,115 @@
+GRADE SHEET FOR CS134 LAB 9 ("Boggle"):
+
+Note that this lab counts as a double lab (worth the grade of two labs).
+
+Task 1:  BoggleLetter
+    ~ passes all instructor tests
+    + implements all methods including __repr__ and __str__
+    + provides appropriate comments on hard to read code
+    + uses good style with getters, setters
+    + uses helper methods when appropriate
+    + isAdjacent correctly handles all cases
+
+Task 2: BoggleBoard
+    + __slots__ completed correctly
+    + passes all instructor tests
+    + implements all required methods
+    + provides appropriate comments on hard to read code
+    + uses good style with getters, setters
+    + uses helper methods when appropriate
+    + correctly implements shakeCubes to produce valid game board (no repeated cubes)
+
+Task 3: BoggleWords
+    ~ passes all instructor tests
+    + implements all required methods
+    + provides appropriate comments on hard to read code
+    + uses good style with getters, setters
+    + uses helper methods when appropriate
+    + correctly implements addWord to prevent duplicates
+
+Task 4: game.py
+    ~ correctly implements game logic
+    + provides appropriate comments on hard to read code
+    + uses methods from other classes appropriately
+    + uses good style throughout
+    + uses helper methods to reduce redundant code
+    + correctly handles reset and exit
+    + checks for valid words of the appropriate length
+
+Extra Credit:
+    * Add some comments on added features:
+    ~ Implemented Timer
+
+
+Grade:  A
+
+
+Comments from Graders:
+Great work on this lab!
+There were some issues with game logic, see game.py and:
+  - a letter that is already added to the work can be re-added : should not be allowed to.
+    These rules are specified in Part 4 in the handout
+  + Nice work on the timer!!! :)
+  - Although timer does not stop the game... and setTimer function should take board as a parameter
+  - Our BoggleLetter tests break because the color property is broken: is
+    unintentionally recursive
+
+
+Results of testing:
+
+Running lab9part1.py...
+-----BoggleLetter Tests-----
+#$ Issue with BoggleLetter.color but otherwise everything else works
++ Passed BoggleLetter init, getters test
++ Passed BoggleLetter init, getters, setters, click test
++ Passed BoggleLetter getters, unclick test
++ Passed BoggleLetter init, getters with color test
++ Passed BoggleLetter isAdjacent tests
++ Passed BoggleLetter textObj getter test
++ Passed BoggleLetter textObj setter test
++ Passed BoggleLetter repr test
++ Passed BoggleLetter str test
+-----BoggleBoard Tests-----
++ Passed BoggleBoard reset
++ Passed BoggleBoard getLetter
++ Passed BoggleBoard getLetterObj
++ Passed BoggleBoard clearLetters() and click() and isClicked
++ Passed BoggleBoard setLetter
+---------------------------
+Done.
+
+***********************************************
+Running lab9part3.py...
+---------BoggleWords Tests----------
++ Passed BoggleWords init test _currWord
++ Passed BoggleWords init test _allWords
++ Passed BoggleWords property test
++ Passed BoggleWords addLetters test
++ Passed BoggleWords addWords test
++ Passed BoggleWords clearCurrentWord test
++ Passed BoggleWords wordStr test
++ Passed BoggleWords addWord wordSet test again
+BoggleWord repr test
+  Expected output: BoggleWords([[BoggleLetter(2, 2, 'H', 'black'), BoggleLetter(1, 2, 'A', 'black'), BoggleLetter(1, 1, 'D', 'black')]], {'had', 'sat'}, '
+SAT
+HAD')
+  Actual output  : BoggleWord([BoggleLetter (2, 2, 'H'), BoggleLetter (1, 2, 'A'), BoggleLetter (1, 1, 'D')], {'HAD', 'SAT'},
+SAT
+HAD)
++ Passed BoggleWords reset
+
+BoggleWord str test (does not have to be exact):
+  Expected output: current Word:HAD
+All words:
+
+SAT
+HAD
+---
+  Actual output  : currentWord = [BoggleLetter (2, 2, 'H'), BoggleLetter (1, 2, 'A'), BoggleLetter (1, 1, 'D')], wordSet = {'HAD', 'SAT'}, allWords =
+SAT
+HAD
+---
+All Done BoggleWords!
+Done.
+
+***********************************************
