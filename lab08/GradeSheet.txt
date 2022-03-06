@@ -1,0 +1,82 @@
+GRADE SHEET FOR CS134 LAB 8 ("Ciphers"):
+
+Task 1:  rotateLetter
+    + passes all instructor doctests
+    + does not use .index or create an alphabet string
+    ~ does not use an unnecessary else return statement
+    + has a default return type of string
+
+Task 2: Message Class
+    + __slots__ completed
+    + __init__ works as expected
+    + text property correctly implemented
+    + wordCount property correctly implemented
+    + wordCount uses appropriate helper function
+    + rotate method correctly implemented
+    + rotate method uses rotateLetter helper function
+    + rotate and wordCount use text property
+    + added a new doctest to each method in this class
+
+Task 3: Plaintext Class
+    + __init__ initializes uninherited attributes
+    + shift property correctly implemented
+    ~ shift setter correctly implemented
+    + encrypt correctly implemented
+    + encrypt uses appropriate helper function
+    + added a new doctest to each method in this class
+
+Task 4: Ciphertext Class
+    + __init__ initializes inherited attributes correctly
+    ~ decrypt method correctly implemented
+    + decrypt uses appropriate helper methods
+    ~ bestDecryption implemented correctly
+    + bestDecryption does not use unnecessary loops or lists
+    + bestDecryption returns a plaintext object
+    + added a new doctest to each method in this class
+
+Task 5: decrypt.py
+    + Running file as a script correctly decrypts story
+    + File decoded.txt contains the decrypted story
+
+
+Grade: A-
+
+
+Comments from Graders: Generally well done.
+* cipherTools.rotateLetter
+  - you should be using ord()/chr() rather than hardcoding ASCII numbers
+* Plaintext
+  * shift.setter
+    ~ shiftValue should always be between 0-25 (use %26 to ensure that, see inline
+      comment)
+* Ciphertext
+  * decrypt
+    - when creating the Plaintext object you need to pass in unshift; your code
+      would fail the following:
+        >>> cipher = Ciphertext('jgnnq').decrypt(2).encrypt
+        'jgnnq'
+
+Results of testing:
+
+honorcode.txt was edited
+***********************************************
+
+Running lab8-tools-stress.py...
+All unit tests passed.
+Done.
+
+Running cipherTools.py.  (No output expected.)
+Done.
+***********************************************
+
+Running lab8-classes-stress.py...
+All unit tests passed.
+Plaintext shift setter method incorrect for 36. Returns  32
+Done.
+
+Running cipherClasses.py (No output expected.)
+Done.
+***********************************************
+
+Student output for decrypt.py MATCHES solution.
+Done.
