@@ -1,0 +1,50 @@
+GRADE SHEET FOR CS134 LAB 5 ("Debugging"):
+
+Requirements of this lab:
+   1. Debugging of swedishpuzzle.py
+      + Removal of syntax errors to allow correct execution
+      + Identify corrected lines with #FIXED
+   2. Debugging of vowelacious.py
+      + Provide 6 strings at top of file
+      + Fill in TODO docstring comment with description of logic error
+      + Correct implementation of isVowelacious
+
+
+Grade: A
+
+
+Comments from Graders:
+
+Well done! Make sure to comment out debugging statements and include a line in the
+main method to stop the code from producing an indentation error when run as a script.
+
+Results from testing:
+
+honorcode.txt was edited
+
+Running lab5-swedishpuzzle-testing.py...
+
+Running swedishpuzzle test.
+******* 0 errors detected. *******
+Done.
+
+Running swedishpuzzle.py.
+-----------------
+Expected output:
+-----------------
+convert('ouo', '') returns ''
+convert('o', 'stubborn') returns 'sostotubobboborornon'
+-----------------
+Student solutions:
+-----------------
+convert('ouo', '') returns ''
+convert('o', 'stubborn') returns 'sostotubobboborornon'
+-----------------
+Done.
+
+
+Running lab5-vowelacious-testing.py...
+
+Running vowelacious test.
+******* 0 errors detected. *******
+Done.
