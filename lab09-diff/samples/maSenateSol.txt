@@ -1,0 +1,27 @@
+ > 7: Nick  Collins
+ > 8: Joanne  Comerford
+ > 10: Brendan  Crighton
+ > 11: John  Cronin
+ < 9: Vinny  deMacedo
+ < 11: Kenneth  Donnelly
+ < 12: Eileen  Donoghue
+ < 13: Linda  Dorcena
+ > 14: Diana  DiZoglio
+ < 16: Jennifer  Flanagan
+ > 17: Paul  Feeney
+ > 18: Barry  Finegold
+ > 19: Cindy  Friedman
+ > 21: Adam  Gomez
+ < 19: Donald  Humason
+ < 22: Barbara  L'Italien
+ > 25: Edward  Kennedy
+ < 26: Thomas  McGee
+ < 29: Kathleen  O'Connor
+ > 31: Susan  Moran
+ > 34: Rebecca  Rausch
+ < 33: Stanley  Rosenberg
+ < 34: Richard  Ross
+ < 38: James  Timilty
+ < 40: James  Welch
+ > 40: John  Velis
+

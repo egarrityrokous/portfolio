@@ -1,0 +1,49 @@
+ > 2: 
+ > 3: Abbott: Strange names, pet names...like Dizzy Dean...
+ > 4: 
+ > 5: Costello: His brother Daffy.
+ > 6: 
+ > 7: Abbott: Daffy Dean...
+ < 12: 
+ < 13: Abbott: Strange names, pet names...like Dizzy Dean...
+ < 14: 
+ < 15: Costello: His brother Daffy.
+ < 16: 
+ < 17: Abbott: Daffy Dean...
+ < 18: 
+ < 20: 
+ < 22: 
+ < 23: Costello: Goofy.
+ < 24: 
+ < 25: Abbott: Goofy Dean. Well, let's see, we have on the bags, Who's on first, What's on second, I Don't Know is on third...
+ < 26: 
+ < 27: Costello: That's what I want to find out.
+ < 28: 
+ < 29: Abbott: I say Who's on first, What's on second, I Don't Know's on third.
+ < 30: 
+ < 32: 
+ < 34: 
+ > 31: 
+ > 32: Costello: Goofy.
+ > 33: 
+ > 34: Abbott: Goofy Dean. Well, let's see, we have on the bags, Who's on first, What's on second, I Don't Know is on third...
+ > 35: 
+ > 36: Costello: That's what I want to find out.
+ > 37: 
+ > 38: Abbott: I say Who's on first, What's on second, I Don't Know's on third.
+ < 56: 
+ < 58: 
+ < 60: 
+ < 62: 
+ < 64: 
+ < 67: Costello: That's who's name?
+ > 57: Costrello: That's who's name?
+ < 77: Abbott: Yes.
+ > 67: Abbrott: Yes.
+ < 81: Costello: Look, you gotta first baseman?
+ > 71: Costrello: Look, you gotta first baseman?
+ < 83: Abbott: Certainly.
+ > 73: Abbrott: Certainly.
+ < 85: Costello: Who's playing first?
+ > 75: Costrello: Who's playing first?
+
