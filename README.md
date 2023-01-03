@@ -1,6 +1,16 @@
-# My Portfolio
-Thanks for visiting my website! My name is Eamon Garrity-Rokous, and I'm currently a sophomore at Williams College on the varsity wrestling team planning on majoring in Computer Science (B.A.). This repository is a portfolio of my coding projects from computer science courses taken at Phillips Academy Andover and Williams College. Some of these lab projects may include instructors' feedback and files they initially provided to students to begin their work, in addition to my own comments. A PDF of my resume is included in this repository, or you can it find here: https://drive.google.com/drive/folders/1p2Mq08t6Na7lld_DhKDGGtqZNjVPquqS?usp=sharing
+![screenshot](images/screenshot.png)
 
-A little about me: I love investing in and building tech ideas and businesses. I also love business strategy, product management, coding, creating, and all things innovative and revolutionary. I'm heavily involved in startups, venture capital, fintech, edtech, climate & cleantech, impact investing, Web3, and blockchain tech. I am efficient in Python, Java, Scala, PySpark, MySQL, PostgreSQL, Excel, PowerPoint, Google Workspace, Slack, Discord, Notion, Canva, and Adobe. I'm looking to collaborate with passionate people in the startup, VC, and business world and on projects we are excited about working on every early morning we wake up. To reach me, please email eeg5@williams.edu or egarrityrokous@gmail.com or find me on LinkedIn here: https://www.linkedin.com/in/eamon-garrity-rokous-4595a81a6/ 
+## Wordle
 
-Please feel free to come back later to check for updates on my portfolio and story!
+The assignment description can be found [here](https://docs.google.com/document/d/1NW6Ejy7aX54DOy4fWVTY255MPwNhjIcNXtChd08KFKI/edit?usp=sharing).
+
+This repository contains a starter file for the code you need to write:
+- `agent.py`: Put code in this file.
+
+It also contains code that you don't need to look at (though you're welcome to) and should 
+not change:
+- `game.py`: Implementation of the Wordle game.
+- `graphics.py`: Graphics support for the game.
+- `util.py`: Miscellaneous classes and functions.
+
+Ignore (but do not delete!!!) the other files in this repository.
