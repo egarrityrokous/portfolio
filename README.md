@@ -1,4 +1,4 @@
-Thanks for visiting my Github page! My name is Joseph Eamon Garrity-Rokous. Here's a little background on me:
+Thanks for visiting my Github page! My name is Joseph Eamon Garrity-Rokous. This is a repository of my coding projects from my college Computer Science classes. Here's a little background on me:
 
 - Joined founding teams at Meridian and ViableEdu as employee #1
 - Responsible for user authentication engine, merchant onboarding, key partnerships, managing design & engineering team tasks, product performance monitoring and QA, and product operationalization for a global product rollout to 93M users
